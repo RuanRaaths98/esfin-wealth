@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Investment Management</span></div>
-      <div class="service-hero-label">Investment Management</div>
-      <h1>Diversified portfolios built to grow and protect your wealth</h1>
-      <p>Our investment management service combines rigorous portfolio construction with personalised service — delivering diversified local and offshore portfolios designed to match your risk profile, time horizon, and financial goals.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Institutional-Grade Portfolio Construction</h2>
-          <p class="section-body">We provide access to best-in-class investment managers across domestic and international markets, constructing diversified portfolios that balance growth with capital preservation. Our fee structures are competitive and transparent, and our reporting is clear and regular.</p>
-          <ul class="feature-list"><li>Discretionary and advisory portfolio management</li><li>Local and offshore asset allocation</li><li>Risk-profiled investment strategies</li><li>Unit trust and ETF selection</li><li>Offshore investment structures and platforms</li><li>Regular portfolio reviews and rebalancing</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_investments.png" alt="Investment Management Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Investment Management</span>
+          </div>
+          
+          <h1 class="service-layout-title">Investment Management</h1>
+          <p class="service-layout-intro">Diversified portfolios built to grow and protect your wealth, combining global construction with bespoke oversight.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Portfolio</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Advisory &amp; Structures</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Institutional-Grade Wealth Creation &amp; Protection</h3>
+            <p class="sub-tab-intro-text">We construct risk-profiled portfolios that balance robust capital growth with disciplined preservation across local and global asset classes:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Portfolio Strategy:</span> Discretionary and advisory portfolio management tailored to your timeline.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Asset Allocation:</span> Strategic domestic and offshore asset allocation maximizing risk-adjusted returns.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Selection:</span> Rigorous unit trust, mutual fund, and low-cost ETF selection and structuring.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Continuous Oversight &amp; Sophisticated Structures</h3>
+            <p class="sub-tab-intro-text">We take charge of the structural design and active tracking of your investments to ensure long-term alignment:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Offshore Platforms:</span> Accessing elite international platforms and tax-efficient offshore investment structures.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Rebalancing:</span> Disciplined, regular portfolio reviews, active rebalancing, and tactical adjustments.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Reporting:</span> Clear, comprehensive reporting and transparent, highly competitive fee structures.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Markets are dynamic and increasingly volatile. Your wealth demands active, professional oversight to steer clear of concentration risks, excessive fees, and missed global growth opportunities.</p>
+            <p>Our advisory team ensures your asset base remains perfectly aligned with your family’s generational goals, utilizing institutional-grade partners and clear-cut reporting at every step.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with an Investment Expert</span>
+          </a>
         </div>
       </div>
     </div>

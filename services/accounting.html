@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Accounting</span></div>
-      <div class="service-hero-label">Accounting Services</div>
-      <h1>Precise accounting that gives you total financial clarity</h1>
-      <p>Our accounting team handles every transaction, statement, and administrative obligation — so you always have an accurate, up-to-date picture of your financial position.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Full-Spectrum Financial Record Keeping</h2>
-          <p class="section-body">From daily bookkeeping to annual financial statements and statutory compliance, our accountants ensure your records are accurate, compliant, and structured to support informed decision-making.</p>
-          <ul class="feature-list"><li>Monthly and annual financial statements</li><li>General ledger maintenance and reconciliation</li><li>Statutory submissions and compliance reporting</li><li>Bank account administration</li><li>Management accounts and cash-flow reporting</li><li>SARS compliance and tax return support</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_accounting.png" alt="Accounting Services & Financial Clarity" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Accounting</span>
+          </div>
+          
+          <h1 class="service-layout-title">Accounting Services</h1>
+          <p class="service-layout-intro">Precise accounting that gives you total financial clarity and supports informed decision-making.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Accounting</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Compliance & Reporting</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Practical Strategies for Financial Record Keeping</h3>
+            <p class="sub-tab-intro-text">We provide end-to-end accounting services tailored to protect and manage your business performance. Our core services include:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Financial Statements:</span> Monthly and annual financial statements.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">General Ledger:</span> Ledger maintenance and reconciliation.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Bank Administration:</span> Complete bank account administration and oversight.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Continuous Compliance & SARS Support</h3>
+            <p class="sub-tab-intro-text">We take the stress out of tax filing and reporting, ensuring your business stays fully compliant with statutory regulations:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Compliance submissions:</span> Complete statutory submissions and compliance reporting.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Management Accounts:</span> Monthly reporting and real-time cash-flow analysis.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">SARS Support:</span> Complete compliance and tax return assistance.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Our accounting team handles every transaction, statement, and administrative obligation — so you always have an accurate, up-to-date picture of your financial position.</p>
+            <p>We bring institutional-grade rigour to every set of accounts, giving you complete confidence in your numbers and unlocking cash flow that can be reinvested to build wealth.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with an Accounting Expert</span>
+          </a>
         </div>
       </div>
     </div>

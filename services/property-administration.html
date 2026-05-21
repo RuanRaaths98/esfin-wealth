@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Property Administration</span></div>
-      <div class="service-hero-label">Property Administration</div>
-      <h1>Expert management of your property portfolio</h1>
-      <p>Our property administration service takes the complexity out of owning investment property — handling tenant management, invoicing, maintenance coordination, and financial reporting so you can focus on growing your portfolio.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">End-to-End Property Portfolio Management</h2>
-          <p class="section-body">Managing property assets involves far more than collecting rent. Our team handles every operational and financial aspect of your portfolio — from tenant placement to reconciling accounts — ensuring your properties perform optimally at all times.</p>
-          <ul class="feature-list"><li>Tenant sourcing, vetting, and placement</li><li>Lease agreement administration</li><li>Monthly rental invoicing and collection</li><li>Maintenance coordination and contractor management</li><li>Monthly income and expense statements</li><li>Municipal account management</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_advisory.png" alt="Property Administration Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Property Administration</span>
+          </div>
+          
+          <h1 class="service-layout-title">Property Administration</h1>
+          <p class="service-layout-intro">Taking the complexity out of property ownership with seamless tenant placement and robust financial tracking.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Property</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Maintenance &amp; Support</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Tenant Placement &amp; Lease Administration</h3>
+            <p class="sub-tab-intro-text">We handle every operational detail of your property assets to protect capital values and maintain excellent tenant standards:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Placement:</span> Professional tenant sourcing, background checks, and detailed vetting.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Lease Management:</span> Precise lease drafting, contract administration, and legal renewals.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Collection:</span> Timely monthly rental invoicing, proactive collections, and account reconciliations.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Portfolio Upkeep &amp; Municipal Tracking</h3>
+            <p class="sub-tab-intro-text">We ensure your investment properties remain highly compliant, physically sound, and financially efficient:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Maintenance:</span> Seamless coordination of ongoing maintenance, repairs, and vetted contractor administration.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Statements:</span> Comprehensive monthly income and expenditure statements for tax filing.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Utilities:</span> Proactive tracking of municipal accounts, rates, and utility bills.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Investment property represents a highly profitable asset class, but only when managed with absolute financial and operational discipline. Vacancies and neglected upkeep can quickly erode yields.</p>
+            <p>Our administration team provides an institutional layer of protection, giving you complete visibility over cash flows, tenant metrics, and portfolio performance without any of the daily friction.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with a Property Expert</span>
+          </a>
         </div>
       </div>
     </div>

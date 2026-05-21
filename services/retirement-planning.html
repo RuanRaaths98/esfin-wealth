@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Retirement Planning</span></div>
-      <div class="service-hero-label">Retirement Planning</div>
-      <h1>Retirement income that lasts as long as you do</h1>
-      <p>Our integrated retirement planning service combines pension structuring, investment strategy, and tax planning to ensure that your working years build the foundation for a financially independent retirement.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Integrated Pension and Income Strategies</h2>
-          <p class="section-body">True retirement planning goes beyond selecting a retirement annuity. We analyse your full financial picture, project future income needs, and design a comprehensive strategy that maximises contributions, minimises tax, and converts accumulated wealth into reliable, inflation-beating income.</p>
-          <ul class="feature-list"><li>Retirement needs and income projection analysis</li><li>Retirement annuity and pension fund structuring</li><li>Living annuity and guaranteed annuity selection</li><li>Employer retirement fund advice</li><li>Pre-retirement tax planning and deduction optimisation</li><li>Post-retirement income and drawdown strategies</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_investments.png" alt="Retirement Planning Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Retirement Planning</span>
+          </div>
+          
+          <h1 class="service-layout-title">Retirement Planning</h1>
+          <p class="service-layout-intro">Integrated wealth accumulation and tax optimization designed to secure a financially independent retirement.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Strategy</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Tax &amp; Drawdowns</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Integrated Pension &amp; Retirement Annuities</h3>
+            <p class="sub-tab-intro-text">We construct comprehensive accumulation strategies that maximize compound growth and minimize tax friction before you retire:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Projections:</span> Detailed retirement needs and capital growth projection analysis.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Fund Structuring:</span> Structuring corporate pension funds, provident funds, and personal retirement annuities.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Drawdowns:</span> Selecting high-efficiency living annuities and guaranteed annuities to secure monthly income.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Employer Advice &amp; Capital Preservation</h3>
+            <p class="sub-tab-intro-text">We coordinate your corporate and personal retirement accounts to prevent tax leakage and inflation erosion:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Employer Funds:</span> Specialist advice on employer-sponsored retirement funds and benefit optimization.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Pre-Retirement:</span> Strategic pre-retirement tax planning to optimize annual contribution deductions.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Drawdowns Strategy:</span> Disciplined post-retirement drawdown schedules to safeguard capital longevity.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Retiring comfortably in South Africa requires planning for longevity, persistent inflation, and complex regulatory frameworks. Relying solely on a basic corporate pension is rarely sufficient.</p>
+            <p>Our retirement advisory team aligns your investments with Section 28 requirements and custom drawdown profiles, delivering complete tax clearance and steady cash flows for your retirement years.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with a Retirement Expert</span>
+          </a>
         </div>
       </div>
     </div>

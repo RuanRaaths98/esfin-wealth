@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Tax</span></div>
-      <div class="service-hero-label">Tax Services</div>
-      <h1>Proactive tax planning that works as hard as you do</h1>
-      <p>Our tax team provides comprehensive compliance, proactive planning, and expert SARS representation — ensuring you meet every obligation while legally minimising your tax burden through intelligent planning and structuring.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Compliance, Planning &amp; SARS Representation</h2>
-          <p class="section-body">Tax is one of the largest costs facing any individual or business. Our approach combines meticulous compliance with forward-looking planning — identifying legitimate opportunities to reduce your effective tax rate while keeping you fully compliant with all SARS requirements.</p>
-          <ul class="feature-list"><li>Individual and corporate income tax returns</li><li>Provisional tax calculations and submissions</li><li>VAT registration, returns, and refunds</li><li>Capital gains tax planning and reporting</li><li>SARS audit representation and objections</li><li>Tax clearance certificates and good standing</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_accounting.png" alt="Tax Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Tax</span>
+          </div>
+          
+          <h1 class="service-layout-title">Tax</h1>
+          <p class="service-layout-intro">Proactive tax compliance, strategic planning, and expert SARS representation to protect and optimize your wealth.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Tax Services</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Compliance &amp; Disputes</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Tax Planning &amp; Compliance</h3>
+            <p class="sub-tab-intro-text">We manage your ongoing tax filings with precision, ensuring absolute compliance while identifying strategic avenues for tax optimization:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Individual Tax Returns:</span> Precision preparation and submission of annual personal tax returns (ITR12) for high-net-worth families.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Corporate Tax Planning:</span> Strategic structuring and filing of corporate tax returns (ITR14) to enhance overall profitability.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Provisional Tax Returns:</span> Accurate calculations and timely filing of bi-annual provisional tax returns (IRP6) to prevent penalties.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">SARS Disputes &amp; Specialized Audits</h3>
+            <p class="sub-tab-intro-text">We act as your expert representative before SARS, resolving complex audits and securing corporate compliance clearances:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">SARS Audit Representation:</span> Meticulous audit preparation, compilation of required supporting documents, and professional dispute resolution.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">CGT &amp; Restructuring:</span> Capital Gains Tax optimization, corporate restructuring rollover relief applications, and asset transfers.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Tax Clearance Services:</span> Fast-track processing of Tax Clearance Status (TCS) for foreign investments and good standing.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Tax is one of the single largest friction points in wealth creation. Without continuous, proactive planning, a substantial portion of your annual returns can be lost to avoidable liabilities.</p>
+            <p>We work closely with you throughout the year, analyzing your investment portfolios, business assets, and trusts to execute legally compliant strategies that lower your effective tax rate and secure your legacy.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with a Tax Expert</span>
+          </a>
         </div>
       </div>
     </div>

@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Foreign Exchange</span></div>
-      <div class="service-hero-label">Foreign Exchange</div>
-      <h1>Comprehensive currency solutions for every need</h1>
-      <p>Whether you are emigrating, investing offshore, supporting children abroad, or managing cross-border business transactions, our foreign exchange service provides competitive rates, full compliance, and seamless execution.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Currency Solutions &amp; Allowance Administration</h2>
-          <p class="section-body">South Africa's exchange control regulations are complex and constantly evolving. Our team navigates the rules on your behalf — securing competitive rates, ensuring full SARB compliance, and handling every administrative step from application to transfer.</p>
-          <ul class="feature-list"><li>Discretionary and capital allowance management</li><li>Externalisation of funds for emigration</li><li>Offshore investment transfers</li><li>Foreign maintenance and education allowances</li><li>Business and trade payment facilitation</li><li>SARB and SARS compliance and reporting</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_investments.png" alt="Foreign Exchange Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Foreign Exchange</span>
+          </div>
+          
+          <h1 class="service-layout-title">Foreign Exchange</h1>
+          <p class="service-layout-intro">Highly competitive institutional rates, complete exchange control compliance, and seamless cross-border transfers.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Forex</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Compliance &amp; Trade</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Currency Solutions &amp; Capital Transfers</h3>
+            <p class="sub-tab-intro-text">We negotiate institutional rates that consistently outperform standard retail bank margins, ensuring your funds transfer smoothly and cost-effectively:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Allowances:</span> Complete discretionary and capital allowance facilitation up to statutory limits.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Fund Externalisation:</span> Seamless externalisation of funds for emigration or relocation purposes.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Offshore Investing:</span> Direct transfer support for offshore portfolios and global asset acquisition.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">SARB Reporting &amp; Trade Facilitation</h3>
+            <p class="sub-tab-intro-text">We navigate complex and evolving South African exchange control regulations on your behalf:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Maintenance &amp; Education:</span> Hassle-free foreign maintenance and international education payment administration.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Business Trade:</span> Professional business payment facilitation and commercial cross-border trade transactions.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">SARB Compliance:</span> Thorough SARS Tax Clearance Application management and complete SARB reporting compliance.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Exchange control non-compliance carries severe legal and financial penalties. Our specialists take full charge of the administrative process, ensuring every transfer is correctly documented and approved.</p>
+            <p>We combine institutional-grade execution speed with curated, competitive pricing, delivering an end-to-end foreign exchange service that brings ultimate efficiency to your global capital flows.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with a Forex Expert</span>
+          </a>
         </div>
       </div>
     </div>

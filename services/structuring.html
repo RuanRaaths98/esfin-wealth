@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Structuring</span></div>
-      <div class="service-hero-label">Structuring</div>
-      <h1>Tax-efficient structures tailored to your family's needs</h1>
-      <p>We design and implement sophisticated legal and tax structures — companies, trusts, and hybrid arrangements — that protect assets, minimise tax, facilitate succession, and provide operational flexibility for families and businesses.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Company &amp; Trust Structuring Expertise</h2>
-          <p class="section-body">The right structure can make an enormous difference to your effective tax rate, estate liability, and long-term wealth accumulation. Our structuring specialists analyse your full circumstances and design bespoke solutions using the most appropriate combination of vehicles available under South African and international law.</p>
-          <ul class="feature-list"><li>Company and holding structure design</li><li>Trust formation and interposition</li><li>Hybrid structure optimisation</li><li>Section 42, 44, and 45 corporate restructuring</li><li>Cross-border and offshore holding structures</li><li>Business buy-out and shareholder structuring</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_accounting.png" alt="Structuring Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Structuring</span>
+          </div>
+          
+          <h1 class="service-layout-title">Structuring</h1>
+          <p class="service-layout-intro">Sophisticated legal and tax structures built to protect corporate and family assets, optimizing efficiency.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Structures</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Compliance &amp; Restructuring</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Corporate &amp; Holding Structure Design</h3>
+            <p class="sub-tab-intro-text">We establish legally robust and tax-optimized structures that enhance operational flexibility and safeguard your wealth:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Company Design:</span> Tailored company formations, group holding setups, and shareholder structures.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Trust Interposition:</span> Strategic integration and interposition of family and business trusts.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Hybrid Setups:</span> Designing hybrid structures to optimize cross-entity capital flow and compliance.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Corporate Transitions &amp; Tax Optimization</h3>
+            <p class="sub-tab-intro-text">We execute complex reorganizations and cross-border transactions to ensure continuous statutory compliance:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Restructuring:</span> Professional advice on Section 42, 44, and 45 corporate restructuring rollovers.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Offshore Holdings:</span> Robust offshore structuring, foreign trust integrations, and international holdings.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Shareholder Agreements:</span> Secure business buyout structures, funding models, and shareholder agreement reviews.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>How you own your assets is just as important as what you own. Without a cohesive, legally sound holding structure, your capital remains exposed to unnecessary taxes, creditor claims, and estate delays.</p>
+            <p>Our structuring team designs personalized corporate and trust systems that ring-fence your assets from liabilities, streamline inter-generational transfers, and dramatically lower your long-term tax footprint.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with a Structuring Expert</span>
+          </a>
         </div>
       </div>
     </div>

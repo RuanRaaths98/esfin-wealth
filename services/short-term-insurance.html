@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Short-Term Insurance</span></div>
-      <div class="service-hero-label">Short-Term Insurance</div>
-      <h1>Comprehensive cover negotiated at institutional rates</h1>
-      <p>Our short-term insurance service provides domestic and commercial cover for all your assets — property, vehicles, valuables, and liability — negotiated at competitive institutional rates and managed end-to-end by our experienced team.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Domestic &amp; Commercial Insurance Management</h2>
-          <p class="section-body">The right insurance cover is the foundation of any sound wealth protection strategy. We conduct a thorough assessment of your insurable risks, benchmark your premiums against the market, and place your cover with leading underwriters — then actively manage your policies throughout the year.</p>
-          <ul class="feature-list"><li>Home and household contents insurance</li><li>Motor vehicle and fleet cover</li><li>High-value item and jewellery cover</li><li>Commercial and business premises insurance</li><li>Public liability and professional indemnity</li><li>Annual policy reviews and claims assistance</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_investments.png" alt="Short-Term Insurance Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Short-Term Insurance</span>
+          </div>
+          
+          <h1 class="service-layout-title">Short-Term Insurance</h1>
+          <p class="service-layout-intro">Comprehensive, institutional-grade risk coverage for personal and commercial assets, managed end-to-end.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Domestic Cover</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Commercial Cover</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Personal Asset &amp; Vehicle Protection</h3>
+            <p class="sub-tab-intro-text">We negotiate institutional group rates with leading insurers to ensure your personal holdings are perfectly covered:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Homeowners:</span> Premium domestic house and high-value household contents insurance.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Vehicles:</span> Highly comprehensive motor vehicle, marine, and corporate fleet coverage.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Valuables:</span> Focused, high-value asset cover for jewelry, fine art, and personal technology.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Commercial Premises &amp; Claims Advocacy</h3>
+            <p class="sub-tab-intro-text">We build robust business risk strategies to protect your commercial entities from liability and disruption:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Premises:</span> Business property, retail outlets, and commercial asset insurance.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Liability:</span> Comprehensive public liability, director’s protection, and professional indemnity.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Advocacy:</span> Proactive, complete claims advocacy and structured annual risk exposure reviews.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Being under-insured or caught with restrictive policy exclusions is a significant financial risk. Standard, off-the-shelf retail policies often fail to cover actual replacement costs during major claims.</p>
+            <p>Our short-term insurance team acts as your dedicated advocate, benchmarking premiums across leading South African underwriters to secure maximum coverage at competitive group rates.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with an Insurance Expert</span>
+          </a>
         </div>
       </div>
     </div>

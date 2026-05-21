@@ -41,33 +41,81 @@
     </div>
   </nav>
 
-  <section class="service-hero">
+  <section class="service-layout-section">
     <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Fiduciary</span></div>
-      <div class="service-hero-label">Fiduciary Services</div>
-      <h1>Independent trusteeship you can rely on completely</h1>
-      <p>As a fiduciary, we act in your best interests above all else. Our independent trustee service provides professional oversight of trusts, estates, and other structures — ensuring they are administered correctly and in line with your intentions.</p>
-      <div class="hero-actions">
-        <a href="../index.html#contact" class="btn-gold">Book a Consultation</a>
-        <a href="../index.html#services" class="btn-outline-white">All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text fade-up">
-          <div class="gold-divider"></div>
-          <div class="section-label">What We Offer</div>
-          <h2 class="section-title">Professional Independent Trustee Services</h2>
-          <p class="section-body">Trusts require professional administration to remain compliant and effective. As independent trustees, we bring objectivity, expertise, and accountability to every trust we oversee — ensuring beneficiaries are protected and the trust deed is honoured at all times.</p>
-          <ul class="feature-list"><li>Independent trustee appointments for family and business trusts</li><li>Trust meeting facilitation and minutes</li><li>Trust bookkeeping and financial statements</li><li>SARS registration and compliance for trusts</li><li>Trust deed amendments and reviews</li><li>Estate and inheritance administration</li></ul>
+      <div class="service-layout-grid">
+        <!-- Left Column: Image Card -->
+        <div class="service-layout-left fade-up">
+          <div class="service-image-container">
+            <img src="../assets/service_accounting.png" alt="Fiduciary Services" />
+          </div>
         </div>
-        <div class="col-right fade-up">
-          <div class="detail-card"><div class="detail-number">01</div><h4>Initial Assessment</h4><p>We begin with a comprehensive review of your current position, goals, and specific requirements.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">02</div><h4>Tailored Strategy</h4><p>Our specialists design a bespoke solution aligned with your unique circumstances and objectives.</p></div>
-          <div class="detail-card" style="margin-top:16px"><div class="detail-number">03</div><h4>Ongoing Support</h4><p>We provide continuous monitoring, reporting, and proactive guidance as your needs evolve.</p></div>
+        
+        <!-- Right Column: Content -->
+        <div class="service-layout-right fade-up">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span>Fiduciary</span>
+          </div>
+          
+          <h1 class="service-layout-title">Fiduciary</h1>
+          <p class="service-layout-intro">Professional, objective independent trusteeship you can rely on completely.</p>
+          
+          <!-- Pill Selector Tabs -->
+          <div class="sub-tab-selector">
+            <button class="sub-tab-btn active" data-subtab="core">Core Trusteeship</button>
+            <button class="sub-tab-btn" data-subtab="compliance">Compliance &amp; Admin</button>
+          </div>
+          
+          <!-- Tab Content: Core Service -->
+          <div class="sub-tab-content active" id="subtab-content-core">
+            <h3 class="sub-tab-heading">Professional Independent Fiduciary Appointments</h3>
+            <p class="sub-tab-intro-text">We bring objectivity, expertise, and accountability to every trust we oversee, acting in the best interests of beneficiaries:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Trustee Appointments:</span> Independent trustee appointments for family and business trusts.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Trust Governance:</span> Thorough trust meeting facilitation, minutes, and resolution drafting.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Trust Deed Management:</span> Ongoing trust deed amendments, updates, and regular reviews.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab Content: Compliance & Support -->
+          <div class="sub-tab-content" id="subtab-content-compliance">
+            <h3 class="sub-tab-heading">Structured Bookkeeping &amp; SARS Reporting</h3>
+            <p class="sub-tab-intro-text">We take the administrative stress out of trust management, ensuring total compliance with all regulatory authorities:</p>
+            <ul class="feature-list-svg">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Trust Bookkeeping:</span> Full trust bookkeeping and preparation of financial statements.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">SARS Compliance:</span> Trust SARS registration, statutory filing, and compliance reporting.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="7"></circle></svg>
+                <span><span class="bold-bullet">Estate Administration:</span> Professional execution and administration of estates and inheritance structures.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-layout-extra-text">
+            <p>Trusts require meticulous administration and active oversight to remain legally compliant and tax-effective. As independent trustees, we represent an objective, professional voice in all trust operations.</p>
+            <p>Our experienced team ensures that all decisions protect your beneficiaries, comply with the Trust Property Control Act, and align fully with the founder's original intentions.</p>
+          </div>
+
+          <!-- Pegasus Gold Circular Plus CTA Link -->
+          <a href="../index.html#contact" class="btn-gold-plus-text">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Speak with a Fiduciary Expert</span>
+          </a>
         </div>
       </div>
     </div>
