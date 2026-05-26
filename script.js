@@ -207,29 +207,79 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---- Services Tab Swapping (Pegasus Style) ----
-  const tabButtons = document.querySelectorAll('.services-tab-btn');
-  const tabPanels = document.querySelectorAll('.services-tab-panel');
+  // ---- Dynamic Service Details Modal ----
+  const detailsModalHTML = `
+    <div class="detail-modal-overlay" id="detailModalOverlay">
+      <div class="detail-modal-container">
+        <button class="detail-modal-close-btn" id="detailModalCloseBtn">&times;</button>
+        <div class="detail-modal-content" id="detailModalContent">
+          <!-- Injected service panel content -->
+        </div>
+      </div>
+    </div>
+  `;
 
-  if (tabButtons.length > 0 && tabPanels.length > 0) {
-    tabButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const targetTab = btn.getAttribute('data-tab');
+  document.body.insertAdjacentHTML('beforeend', detailsModalHTML);
 
-        // Remove active class from all buttons and panels
-        tabButtons.forEach(b => b.classList.remove('active'));
-        tabPanels.forEach(p => p.classList.remove('active'));
+  const detailOverlay = document.getElementById('detailModalOverlay');
+  const detailCloseBtn = document.getElementById('detailModalCloseBtn');
+  const detailContent = document.getElementById('detailModalContent');
+  const serviceCards = document.querySelectorAll('.service-card');
 
-        // Add active class to clicked button and target panel
-        btn.classList.add('active');
-        const targetPanel = document.getElementById(`tab-panel-${targetTab}`);
-        if (targetPanel) {
-          targetPanel.classList.add('active');
+  serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const serviceId = card.getAttribute('data-service');
+      const sourcePanel = document.getElementById(`tab-panel-${serviceId}`);
+      if (sourcePanel) {
+        // Clone the panel content
+        const clonedPanel = sourcePanel.cloneNode(true);
+        // Make sure it is active/visible
+        clonedPanel.classList.add('active');
+        
+        // Inject into modal content
+        detailContent.innerHTML = '';
+        detailContent.appendChild(clonedPanel);
+        
+        // Open modal
+        detailOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+
+        // Bind the consult button inside the cloned modal
+        const consultBtn = clonedPanel.querySelector('.btn-gold-plus');
+        if (consultBtn) {
+          consultBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            detailOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+              const targetEl = document.querySelector('#contact');
+              if (targetEl) {
+                const navHeight = document.getElementById('navbar').offsetHeight;
+                const top = targetEl.getBoundingClientRect().top + window.scrollY - navHeight;
+                window.scrollTo({ top, behavior: 'smooth' });
+              }
+            }, 300);
+          });
         }
-
-        // Center the active tab button inside the scrollable container on mobile
-        btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-      });
+      }
     });
-  }
+  });
+
+  const closeDetailsModal = () => {
+    detailOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  detailCloseBtn.addEventListener('click', closeDetailsModal);
+  detailOverlay.addEventListener('click', (e) => {
+    if (e.target === detailOverlay) closeDetailsModal();
+  });
+
+  // Close modals on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDetailsModal();
+    }
+  });
 
 });
