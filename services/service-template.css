@@ -61,7 +61,6 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 .nav-item-dropdown { position:relative; }
 .nav-link-dropdown { display:flex; align-items:center; gap:5px; }
 .nav-link-dropdown .chevron { width:16px; height:16px; transition:var(--transition-fast); }
-.nav-item-dropdown:hover .chevron { transform:rotate(180deg); }
 .nav-item-dropdown::after { content:''; position:absolute; top:100%; left:0; right:0; height:12px; }
 .dropdown-menu {
   position:absolute; top:calc(100% + 8px); left:50%;
@@ -72,7 +71,13 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
   display:grid; grid-template-columns:repeat(3,1fr); gap:4px;
   opacity:0; visibility:hidden; transition:var(--transition-base); pointer-events:none;
 }
-.nav-item-dropdown:hover .dropdown-menu { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); pointer-events:all; }
+/* Hover-driven reveal only applies where a real hover input exists —
+   scoped to min-width so its higher-specificity transform can never
+   fight the mobile layout's transform reset below. */
+@media (min-width: 769px) {
+  .nav-item-dropdown:hover .chevron { transform:rotate(180deg); }
+  .nav-item-dropdown:hover .dropdown-menu { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); pointer-events:all; }
+}
 .dropdown-item { display:flex; align-items:flex-start; padding:10px 12px; border-radius:8px; transition:var(--transition-fast); }
 .dropdown-item:hover { background:var(--color-gray-50); }
 .dropdown-item .dd-text h4 { font-size:0.85rem; font-weight:600; color:var(--color-primary); margin-bottom:2px; }
@@ -678,8 +683,64 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
     gap: 10px;
     text-align: center;
   }
+  .navbar .container {
+    height: 70px;
+  }
   .nav-links {
     display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-white);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px;
+    gap: 4px;
+    border-top: 1px solid var(--color-border);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-link {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+  .nav-cta {
+    margin-top: 12px;
+    text-align: center;
+    display: block;
+  }
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 8px;
+    gap: 0;
+    grid-template-columns: 1fr;
+    display: none;
+    margin-top: 4px;
+    max-height: 45vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-item-dropdown.active-mobile .dropdown-menu {
+    display: grid;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .nav-item-dropdown.active-mobile .chevron {
+    transform: rotate(180deg);
+  }
+  .dropdown-item {
+    padding: 10px 12px;
   }
   .nav-toggle {
     display: flex;
