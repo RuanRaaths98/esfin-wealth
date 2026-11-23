@@ -468,8 +468,8 @@ button {
   align-items: center;
   justify-content: center;
   padding: 14px 36px;
-  background: var(--color-accent);
-  color: var(--color-primary-dark);
+  background: #7B2D8E;
+  color: #FFFFFF;
   font-size: 0.92rem;
   font-weight: 600;
   border-radius: 100px;
@@ -478,8 +478,8 @@ button {
 }
 
 .btn-hero:hover {
-  background: var(--color-accent-light);
-  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.35);
+  background: #9B4DB0;
+  box-shadow: 0 8px 30px rgba(123, 45, 142, 0.35);
   transform: translateY(-2px) scale(1.02);
 }
 
