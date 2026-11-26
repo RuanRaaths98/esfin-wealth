@@ -202,35 +202,16 @@ button {
   padding-right: 5%;
 }
 
-/* Logo Group */
-.nav-logo-group {
-  display: flex;
-  align-items: center;
-}
-
-.logo-divider {
-  width: 1px;
-  height: 45px;
-  background: var(--color-gray-300, #ccc);
-  flex-shrink: 0;
-}
-
 /* Logo */
 .nav-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex: 0 0 240px;
 }
 
 .nav-logo .logo-img {
   height: 80px;
   width: auto;
   display: block;
-}
-
-.nav-logo .logo-img.wealth-logo {
-  height: 55px;
 }
 
 /* Nav Links */
