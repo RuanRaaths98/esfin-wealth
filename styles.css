@@ -206,7 +206,6 @@ button {
 .nav-logo-group {
   display: flex;
   align-items: center;
-  gap: 0;
 }
 
 .logo-divider {
@@ -214,7 +213,6 @@ button {
   height: 45px;
   background: var(--color-gray-300, #ccc);
   flex-shrink: 0;
-  margin: 0 20px;
 }
 
 /* Logo */
@@ -222,22 +220,17 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 220px;
+  flex: 0 0 240px;
 }
 
 .nav-logo .logo-img {
-  width: 100%;
-  height: auto;
-  max-height: 96px;
-  object-fit: contain;
+  height: 55px;
+  width: auto;
   display: block;
 }
 
 .nav-logo .logo-img.wealth-logo {
-  width: 100%;
-  height: auto;
-  max-height: 96px;
-  object-fit: contain;
+  height: 38px;
 }
 
 /* Nav Links */
