@@ -221,16 +221,22 @@ button {
 .nav-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 220px;
 }
 
 .nav-logo .logo-img {
-  height: 96px;
-  width: auto;
+  width: 100%;
+  height: auto;
+  max-height: 96px;
+  object-fit: contain;
   display: block;
 }
 
 .nav-logo .logo-img.wealth-logo {
-  height: 84px;
+  width: 100%;
+  height: auto;
+  max-height: 96px;
   object-fit: contain;
 }
 
