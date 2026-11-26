@@ -206,7 +206,7 @@ button {
 .nav-logo-group {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 0;
 }
 
 .logo-divider {
@@ -214,6 +214,7 @@ button {
   height: 45px;
   background: var(--color-gray-300, #ccc);
   flex-shrink: 0;
+  margin: 0 20px;
 }
 
 /* Logo */
@@ -229,7 +230,7 @@ button {
 }
 
 .nav-logo .logo-img.wealth-logo {
-  height: 96px;
+  height: 84px;
   object-fit: contain;
 }
 
