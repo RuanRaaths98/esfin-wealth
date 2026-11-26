@@ -224,13 +224,13 @@ button {
 }
 
 .nav-logo .logo-img {
-  height: 55px;
+  height: 80px;
   width: auto;
   display: block;
 }
 
 .nav-logo .logo-img.wealth-logo {
-  height: 38px;
+  height: 55px;
 }
 
 /* Nav Links */
