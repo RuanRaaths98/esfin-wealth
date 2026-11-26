@@ -210,8 +210,8 @@ button {
 }
 
 .logo-divider {
-  width: 1.5px;
-  height: 50px;
+  width: 1px;
+  height: 45px;
   background: var(--color-gray-300, #ccc);
   flex-shrink: 0;
 }
